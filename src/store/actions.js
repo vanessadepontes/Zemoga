@@ -55,9 +55,7 @@ export const getDataUser = (idUser) => async (dispatch) => {
 export const getComments = (id) => async (dispatch) => {
   setLoading(true);
   try {
-    console.log('skbbss', id)
     const data = await fetchComments(id);
-    console.log('sjknsj', data)
     dispatch(setComments(data));
   } catch (err) {
     setError(err.message)

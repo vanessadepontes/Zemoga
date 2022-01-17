@@ -7,7 +7,7 @@ const PostScreen = (props) => {
   const {body, userId, id} = props.route.params.item;
   //const user = props.data.user;
   const {comments, user } = props.data;
-console.log(comments)
+  
   useEffect(() => {
     props.getDataUser(userId)
     props.getComments(id)
