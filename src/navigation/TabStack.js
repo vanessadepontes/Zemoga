@@ -1,7 +1,6 @@
 
 import * as React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-//import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import AllScreen from '../screens/all';
 import FavoritesScreen from '../screens/favorites';
@@ -31,18 +30,12 @@ const TabStack =() => {
         component={AllScreen}
         options={{
           tabBarLabel: 'All',
-          // tabBarIcon: ({ color, size }) => (
-          //   <MaterialCommunityIcons name="home" color={color} size={size} />
-          // ),
         }}  />
       <Tab.Screen
         name="Favorites"
         component={FavoritesScreen}
         options={{
           tabBarLabel: 'Favorites',
-          // tabBarIcon: ({ color, size }) => (
-          //   <MaterialCommunityIcons name="settings" color={color} size={size} />
-          // ),
         }} />
     </Tab.Navigator>
   );
